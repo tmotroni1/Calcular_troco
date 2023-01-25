@@ -20,7 +20,7 @@ while True:
     continuar = input('Deseja somar outro troco? [s]im [n]ão ')
     
     if continuar == 's':
-        os.system('cls')
+        os.system('cls') # dependendo do seu sistema operacional, pode ser que o 'cls' não funcione, se der erro, substitua por 'clear'
         continue
     else:
         os.system('cls')
