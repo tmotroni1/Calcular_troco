@@ -2,17 +2,19 @@ import os
 
 while True:
 
-    valor_dado = input('Digite o dinheiro recebido: ')
-    valor_da_compra = input('Digite o valor total da compra: ')
+    float_valor_dado = input('Digite o dinheiro recebido: ')
+    float_valor_da_compra = input('Digite o valor total da compra: ')
+    float_valor_dado = float(float_valor_dado)
+    float_valor_da_compra = float(float_valor_da_compra)
     print('Somando seu troco...')
 
-    if valor_dado > valor_da_compra:
-        troco = float(valor_dado) - float(valor_da_compra)
-        print(f'O troco é de {troco} R$')
-    elif valor_dado < valor_da_compra:
-        troco = float(valor_dado) - float(valor_da_compra)
-        print(f'Está faltando {troco} R$')
-    elif valor_dado == valor_da_compra:
+    if float_valor_dado > float_valor_da_compra:
+        troco = float_valor_dado - float_valor_da_compra
+        print(f'O troco é de {troco:.2f} R$')
+    elif float_valor_dado < float_valor_da_compra:
+        troco = float_valor_dado - float_valor_da_compra
+        print(f'Está faltando {troco:.2f} R$')
+    elif float_valor_dado == float_valor_da_compra:
         print('Não precisa de troco')
     else:
         print('Digite o numero corretamente')
