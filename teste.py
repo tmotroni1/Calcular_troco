@@ -2,10 +2,10 @@ import os
 
 while True:
 
-    float_valor_dado = input('Digite o dinheiro recebido: ')
-    float_valor_da_compra = input('Digite o valor total da compra: ')
-    float_valor_dado = float(float_valor_dado)
-    float_valor_da_compra = float(float_valor_da_compra)
+    valor_dado = input('Digite o dinheiro recebido: ')
+    valor_da_compra = input('Digite o valor total da compra: ')
+    float_valor_dado = float(valor_dado)
+    float_valor_da_compra = float(valor_da_compra)
     print('Somando seu troco...')
 
     if float_valor_dado > float_valor_da_compra:
